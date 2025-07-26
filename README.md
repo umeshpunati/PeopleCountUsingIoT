@@ -56,7 +56,7 @@ Select "Web App"
 Set access to: Anyone
 
 Copy the Web App URL
-
+---
 📲 ESP8266 Firmware Behavior
 ### The ESP8266:
 
@@ -65,27 +65,21 @@ Reads IR sensor input
 Maintains people count based on entry/exit sequence
 
 Sends count to Google Sheets every time it changes
-
-Example URL Format Sent by ESP8266:
-
-perl
-Copy
-Edit
-https://script.google.com/macros/s/your_script_id/exec?count=5
+---
 📈 Use Cases
 Occupancy tracking in classrooms and labs
 
 Monitoring small event spaces or shops
 
 Real-time remote people counting dashboard
-
+---
 ⚠️ Notes
 The Apps Script Web App must remain deployed and accessible.
 
 Internet access is required for the ESP8266 to communicate with Google Sheets.
 
 Sensor alignment must be precise for reliable entry/exit direction detection.
-
+---
 👨‍💻 Developed By
 Umesh Chandra Punati
 B.Tech IoT with AIML – KL University
