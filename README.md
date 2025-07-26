@@ -38,26 +38,15 @@ This project is an IoT-based real-time people counting system using IR sensors a
 
 ### Step 2: Add Apps Script
 - Go to **Extensions > Apps Script**
-- Paste the following script:
 
-```javascript
-function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSheet();
-  var count = e.parameter.count;
-  var time = new Date();
-  sheet.appendRow([time, count]);
-  return ContentService.createTextOutput("Success");
-}
 ### Step 3: Deploy Web App
 Click Deploy > Manage deployments > New deployment
-
 Select "Web App"
-
 Set access to: Anyone
-
 Copy the Web App URL
+
 ---
-📲 ESP8266 Firmware Behavior
+### 📲 ESP8266 Firmware Behavior
 ### The ESP8266:
 
 Reads IR sensor input
@@ -65,22 +54,25 @@ Reads IR sensor input
 Maintains people count based on entry/exit sequence
 
 Sends count to Google Sheets every time it changes
+
 ---
-📈 Use Cases
+### 📈 Use Cases
 Occupancy tracking in classrooms and labs
 
 Monitoring small event spaces or shops
 
 Real-time remote people counting dashboard
+
 ---
-⚠️ Notes
+### ⚠️ Notes
 The Apps Script Web App must remain deployed and accessible.
 
 Internet access is required for the ESP8266 to communicate with Google Sheets.
 
 Sensor alignment must be precise for reliable entry/exit direction detection.
+
 ---
-👨‍💻 Developed By
+### 👨‍💻 Developed By
 Umesh Chandra Punati
 B.Tech IoT with AIML – KL University
 
